@@ -1,5 +1,6 @@
 backend:
-  name: test-repo
+  name: github
+  repo: n18011/n18011-cms-blog
 
 media_folder: static/assets
 public_folder: assets
