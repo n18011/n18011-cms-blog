@@ -71,11 +71,11 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `N18011 CMS Blog`,
-        short_name: `GatsbyJS`,
+        short_name: `N18011 Blog`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
-        display: `minimal-ui`,
+        display: `standalone`,
         // edit below
         icon: `content/assets/gatsby-icon.png`,
       },
