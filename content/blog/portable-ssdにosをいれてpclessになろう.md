@@ -25,32 +25,36 @@ PortableSSDの作成手順は**私の環境固有の問題**も含まれてい�
 
 ## 環境
 
+### Hardware/OS
 - PC(UEFI)
 - windows10(Home)
 - ubuntu18.04
 - USBメモリ 16GB
 - 外付SSD  1TB
 
-**SDD構成**
+**SDD初期構成**
 
 partition|format|size|OS
 ------------|:-----------:|:-------------:|------------
-未割り当て|''|1TB|''
+未割り当て||1TB|
 
 
-
-
-
-
+### 使用するツール
+#### CLIコマンド
+- GParted
+- Diskpart
+- grub-install
 
 ## 目的
 
-### 目標ディスク構成
+### 目標SSD構成
 partition|format|size|OS
-------------|:-----------:|:--------------:|:-----------:
-/dev/sdb1|fat32|200MB
-/dev/sdb2|ntfs|128GB
-/dev/sdb3|ext4|128GB
-/dev/sdb4|linux-swap|8GB
-/dev/sdb5|exfat|512GB
-未割り当て|''|200GBくらい|''
+------------|:-----------:|:--------------:|:-----------
+/dev/sdb1|fat32|200MB|
+/dev/sdb2|ntfs|128GB|windows10
+/dev/sdb3|ext4|128GB|UbuntuStudio20.04
+/dev/sdb4|linux-swap|8GB|
+/dev/sdb5|exfat|512GB|*
+未割り当て||200GBくらい|
+
+*/dev/sdb5はUbuntuStudio20.04の/homeパーティションを割り当てています。
