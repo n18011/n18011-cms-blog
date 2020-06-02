@@ -21,4 +21,9 @@ curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fi
 https://github.com/b-ryan/powerline-shell
 ```
 # fonts
-https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/JetBrainsMono
+参考URL https://github.com/miiton/Cica
+
+https://github.com/miiton/Cica/releases/download/v5.0.1/Cica_v5.0.1_with_emoji.zip
+```
+unzip ${ダウンロード先}/Cica_v5.0.1_with_emoji.zip -d ~/.fonts
+```
