@@ -19,6 +19,23 @@ sudo vi /etc/shells
 chsh -s /usr/bin/fish
 curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
 https://github.com/b-ryan/powerline-shell
+mkdir -p ~/.config/powerline-shell && \
+powerline-shell --generate-config > ~/.config/powerline-shell/config.json
+```
+```json
+{
+  "segments": [
+    "virtual_env",
+-   "username",
+-   "hostname",
+    "ssh",
+    "cwd",
+    "git",
+    "hg",
+    "jobs",
+    "root"
+  ]
+}
 ```
 # fonts
 参考URL https://github.com/miiton/Cica
