@@ -32,6 +32,7 @@ PortableSSDの作成手順は**私の環境固有の問題**も含まれてい�
 - USBメモリ 16GB
 - 外付SSD  1TB
 
+
 **SDD初期構成**
 
 partition|format|size|OS
@@ -40,10 +41,12 @@ partition|format|size|OS
 
 
 ### 使用するツール
-#### CLIコマンド
+#### CLI
 - GParted
 - Diskpart
 - grub-install
+
+#### GUI
 
 ## 目的
 
