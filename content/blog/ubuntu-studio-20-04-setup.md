@@ -44,3 +44,5 @@ https://github.com/miiton/Cica/releases/download/v5.0.1/Cica_v5.0.1_with_emoji.z
 ```
 unzip ${ダウンロード先}/Cica_v5.0.1_with_emoji.zip -d ~/.fonts
 ```
+# Install tools
+- Brave webbrawser
