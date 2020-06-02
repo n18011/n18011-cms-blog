@@ -12,6 +12,13 @@ LANG=C xdg-user-dirs-gtk-update
 ```
 
 # shell
+```
+sudo apt instal fish
+sudo vi /etc/shells
+/usr/bin/fish
+chsh -s /usr/bin/fish
+curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
 https://github.com/b-ryan/powerline-shell
+```
 # fonts
 https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/JetBrainsMono
