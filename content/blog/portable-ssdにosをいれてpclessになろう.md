@@ -25,16 +25,17 @@ PortableSSDの作成手順は**私の環境固有の問題**も含まれてい�
 
 ## 環境
 
+- windows10(Home)
+- ubuntu18.04
+- USBメモリ 16GB
+- 外付SSD  1TB
+
 **SDD構成**
 
 partition|format
 ------------|:-----------:
-/dev/sdb1|fat32
-/dev/sdb2|ntfs
-/dev/sdb3|ext4
-/dev/sdb4|linux-swap
-/dev/sdb5|exfat
-未割り当て|
+未割り当て|''
+
 
 
 
@@ -42,4 +43,12 @@ partition|format
 
 
 ## 目的
-## 結果
+## 目標ディスク構成
+partition|format
+------------|:-----------:
+/dev/sdb1|fat32
+/dev/sdb2|ntfs
+/dev/sdb3|ext4
+/dev/sdb4|linux-swap
+/dev/sdb5|exfat
+未割り当て|''
