@@ -15,7 +15,7 @@ LANG=C xdg-user-dirs-gtk-update
 ```
 sudo apt instal fish
 sudo vi /etc/shells
-/usr/bin/fish
+/usr/bin/fish <-追記
 chsh -s /usr/bin/fish
 curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
 https://github.com/b-ryan/powerline-shell
