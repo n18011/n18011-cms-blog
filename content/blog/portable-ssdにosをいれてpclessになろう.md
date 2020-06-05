@@ -32,6 +32,24 @@ PortableSSDの作成手順は**私の環境固有の問題**も含まれてい�
 - USBメモリ 16GB
 - 外付SSD  1TB
 
+### Software/Command
+#### CLI
+- GParted
+- Diskpart
+- grub-install
+- dd
+
+GpartedとDiskpartはパーティション管理のために使用する。
+
+grub-installはbootloaderを設定するために使用する。
+
+ddはisoファイルをディスクに展開するために使用する。
+
+#### GUI
+- ブラウザ(brave web-brawser)
+
+ブラウザはUbuntuStudioとWindowsのisoファイルをダウンロードするために使用する。
+
 
 **SDD初期構成**
 
@@ -40,24 +58,19 @@ partition|format|size|OS
 未割り当て||1TB|
 
 
-### 使用するツール
-#### CLI
-- GParted
-- Diskpart
-- grub-install
 
-#### GUI
+
 
 ## 目的
 
 ### 目標SSD構成
-partition|format|size|OS
-------------|:-----------:|:--------------:|:-----------
-/dev/sdb1|fat32|200MB|
-/dev/sdb2|ntfs|128GB|windows10
+partition|format|size|OS|用途
+------------|:-----------:|:--------------:|:-----------|:-----------:
+/dev/sdb1|fat32|200MB||bootloader用
+/dev/sdb2|ntfs|128GB|windows10|
 /dev/sdb3|ext4|128GB|UbuntuStudio20.04
-/dev/sdb4|linux-swap|8GB|
-/dev/sdb5|exfat|512GB|*
-未割り当て||200GBくらい|
+/dev/sdb4|linux-swap|8GB||Ubuntu用のswap領域
+/dev/sdb5|exfat|512GB||WindowsとUbuntuの共有フォルダ
+未割り当て||200GBくらい||
 
-*/dev/sdb5はUbuntuStudio20.04の/homeパーティションを割り当てています。
+
