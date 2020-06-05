@@ -65,5 +65,10 @@ blkid
 // mountしたいdirを作成する(すでにあるなら良い)
 mkdir ~/Work
 
+// 自動マウントの設定
+/etc/fstab
+UUID="blkidで調べたUUID" /home/n18011/Work auto, .... 0 2
+
+を追記
 
 ```
