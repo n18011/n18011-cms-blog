@@ -5,9 +5,17 @@ title: ubuntu studio 20.04 SETUP
 description: ubuntu studioをインストールしたので設定手順メモ
 ---
 ```
-sudo apt install curl git exfat-fuse exfat-utils gparted
+// CLI　web server command
+sudo apt install curl 
+// version managiment
+sudo apt install git 
+// exfat patch
+sudo apt install exfat-fuse exfat-utils
+// partition managiment 
+sudo apt install gparted
 ```
 ```
+// change directory languege of ~ dir
 LANG=C xdg-user-dirs-gtk-update
 ```
 
@@ -46,3 +54,16 @@ unzip ${ダウンロード先}/Cica_v5.0.1_with_emoji.zip -d ~/.fonts
 ```
 # Install tools
 - Brave webbrawser
+
+
+# 共有フォルダ
+exfatかntfsでフォーマットされている別のパーティションを~直下に自動でマウントする
+```
+// 共有したいdeviceのUUID調べる
+blkid
+
+// mountしたいdirを作成する(すでにあるなら良い)
+mkdir ~/Work
+
+
+```
