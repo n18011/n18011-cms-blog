@@ -99,6 +99,8 @@ cargo 1.44.0 (05d080faa 2020-05-06)
 ```cargo install fd-find```
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 ```cargo install ripgrep```
+- [cargo atcoder](https://github.com/tanakh/cargo-atcoder)
+```cargo install cargo-atcoder```
 
 ## lsを[lsd](https://github.com/Peltoche/lsd)に変更
 ```
