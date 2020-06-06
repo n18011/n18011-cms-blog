@@ -67,7 +67,8 @@ blkid
 mkdir ~/Work
 
 // 自動マウントの設定
-echo 'UUID="blkidで調べたUUID" /home/n18011/Work auto  auto,x-systemd.automount,rw,nofail,x-systemd.device-timeout=1,suid,dev,users,exec,async,errors=remount-ro  0 1' >> /etc/fstab
+echo 'UUID=6A95-00EC /home/n18011/Work auto auto,x-systemd.automount,rw,nofail,x-systemd.device-timeout=1,suid,dev,exec,async,errors=remount-ro,username=n18011,uid=1000,gid=1000  0 1
+' >> /etc/fstab
 ```
 
 # lsを[lsd](https://github.com/Peltoche/lsd)に変更
