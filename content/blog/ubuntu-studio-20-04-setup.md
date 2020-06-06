@@ -57,6 +57,8 @@ unzip ${ダウンロード先}/Cica_v5.0.1_with_emoji.zip -d ~/.fonts
 - [Brave(webbrowser)](https://brave.com/ja/)
 - [VsCode](https://code.visualstudio.com/download)
 ```sudo snap install code --classic```
+- [Docker](https://www.docker.com/get-started)
+```sudo snap install docker```
 
 
 # 共有フォルダ
@@ -102,3 +104,7 @@ alias lla='ls -la'
 alias lt='ls --tree'
 funcsave ls l la lla lt
 ```
+
+# vscode extensions
+- Japanese Languege Pack
+- Docker
