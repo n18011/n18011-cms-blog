@@ -58,7 +58,10 @@ unzip ${ダウンロード先}/Cica_v5.0.1_with_emoji.zip -d ~/.fonts
 - [VsCode](https://code.visualstudio.com/download)
 ```sudo snap install code --classic```
 - *[Docker](https://www.docker.com/get-started)
-```sudo snap install docker```
+```
+sudo apt install docker.io
+sudo usermod -aG docker n18011
+```
 
 
 *sockの権限が必要なため、/var/run/docker.sockのパーミッションを666に変えた
