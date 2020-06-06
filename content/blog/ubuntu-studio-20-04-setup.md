@@ -55,7 +55,7 @@ unzip ${ダウンロード先}/Cica_v5.0.1_with_emoji.zip -d ~/.fonts
 ```
 # Install tools
 - [Brave(webbrowser)](https://brave.com/ja/)
-- [VsCode]()
+- [VsCode](https://code.visualstudio.com/download)
 ```sudo snap install code --classic```
 
 
