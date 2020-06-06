@@ -55,6 +55,8 @@ unzip ${ダウンロード先}/Cica_v5.0.1_with_emoji.zip -d ~/.fonts
 ```
 # Install tools
 - [Brave(webbrowser)](https://brave.com/ja/)
+- [VsCode]()
+```sudo snap install code --classic```
 
 
 # 共有フォルダ
@@ -70,7 +72,6 @@ mkdir ~/Work
 echo 'UUID=6A95-00EC /home/n18011/Work auto auto,x-systemd.automount,rw,nofail,x-systemd.device-timeout=1,suid,dev,exec,async,errors=remount-ro,username=n18011,uid=1000,gid=1000  0 1
 ' >> /etc/fstab
 ```
-
 
 
 # Rust
