@@ -57,9 +57,11 @@ unzip ${ダウンロード先}/Cica_v5.0.1_with_emoji.zip -d ~/.fonts
 - [Brave(webbrowser)](https://brave.com/ja/)
 - [VsCode](https://code.visualstudio.com/download)
 ```sudo snap install code --classic```
-- [Docker](https://www.docker.com/get-started)
+- *[Docker](https://www.docker.com/get-started)
 ```sudo snap install docker```
 
+
+*sockの権限が必要なため、/var/run/docker.sockのパーミッションを666に変えた
 
 # 共有フォルダ
 exfatかntfsでフォーマットされている別のパーティションを~直下に自動でマウントする
