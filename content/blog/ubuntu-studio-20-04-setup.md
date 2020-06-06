@@ -88,10 +88,11 @@ funcsave ls l la lla lt
 $ curl https://sh.rustup.rs -sSf | sh
 $ cargo -V
 cargo 1.44.0 (05d080faa 2020-05-06)
-
 ```
 
 ## rust tools
 - [tokei](https://github.com/XAMPPRocky/tokei)
 ```cargo install tokei```
 - [bat](https://github.com/sharkdp/bat) ```cargo install --locked bat```
+- [fd](https://github.com/sharkdp/fd)
+```cargo install fd-find```
