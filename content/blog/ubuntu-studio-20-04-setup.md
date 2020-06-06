@@ -112,3 +112,9 @@ funcsave ls l la lla lt
 - Docker
 - Remote Containers
 - Vim
+- Material Icon Theme
+- Code Runner(Run in Terminal: true)
+- Bracket Pair Colorizer
+- Auto Rename Tag
+- indent-rainbow
+- Rust
