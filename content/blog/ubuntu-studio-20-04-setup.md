@@ -110,3 +110,5 @@ funcsave ls l la lla lt
 # vscode extensions
 - Japanese Languege Pack
 - Docker
+- Remote Containers
+- Vim
