@@ -71,16 +71,7 @@ echo 'UUID=6A95-00EC /home/n18011/Work auto auto,x-systemd.automount,rw,nofail,x
 ' >> /etc/fstab
 ```
 
-# lsを[lsd](https://github.com/Peltoche/lsd)に変更
-```
-sudo snap install lsd
-alias ls='lsd'
-alias l='ls -l'
-alias la='ls -a'
-alias lla='ls -la'
-alias lt='ls --tree'
-funcsave ls l la lla lt
-```
+
 
 # Rust
 [参考URL](https://doc.rust-jp.rs/book/second-edition/ch01-01-installation.html)
@@ -91,6 +82,8 @@ cargo 1.44.0 (05d080faa 2020-05-06)
 ```
 
 ## rust tools
+- [lsd](https://github.com/Peltoche/lsd)
+```cargo install lsd```
 - [tokei](https://github.com/XAMPPRocky/tokei)
 ```cargo install tokei```
 - [bat](https://github.com/sharkdp/bat) ```cargo install --locked bat```
@@ -98,3 +91,13 @@ cargo 1.44.0 (05d080faa 2020-05-06)
 ```cargo install fd-find```
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 ```cargo install ripgrep```
+
+## lsを[lsd](https://github.com/Peltoche/lsd)に変更
+```
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
+funcsave ls l la lla lt
+```
