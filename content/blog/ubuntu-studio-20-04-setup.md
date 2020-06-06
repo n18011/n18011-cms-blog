@@ -81,3 +81,17 @@ alias lla='ls -la'
 alias lt='ls --tree'
 funcsave ls l la lla lt
 ```
+
+# Rust
+[参考URL](https://doc.rust-jp.rs/book/second-edition/ch01-01-installation.html)
+```
+$ curl https://sh.rustup.rs -sSf | sh
+$ cargo -V
+cargo 1.44.0 (05d080faa 2020-05-06)
+
+```
+
+## rust tools
+- [tokei](https://github.com/XAMPPRocky/tokei)
+```cargo install tokei```
+- [bat](https://github.com/sharkdp/bat) ```cargo install --locked bat```
