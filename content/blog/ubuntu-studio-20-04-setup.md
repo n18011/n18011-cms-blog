@@ -96,3 +96,5 @@ cargo 1.44.0 (05d080faa 2020-05-06)
 - [bat](https://github.com/sharkdp/bat) ```cargo install --locked bat```
 - [fd](https://github.com/sharkdp/fd)
 ```cargo install fd-find```
+- [ripgrep](https://github.com/BurntSushi/ripgrep)
+```cargo install ripgrep```
