@@ -1,6 +1,6 @@
 ---
 path: setup
-date: 2020-06-02T11:48:11.548Z
+date: 2020-06-06T11:48:11.548Z
 title: ubuntu studio 20.04 SETUP
 description: ubuntu studioをインストールしたので設定手順メモ
 ---
@@ -74,5 +74,12 @@ UUID="blkidで調べたUUID" /home/n18011/Work auto, .... 0 2
 ```
 
 # lsを変更
-exa
-alias ls="exa"
+```
+sudo snap install lsd
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
+funcsave ls l la lla lt
+```
