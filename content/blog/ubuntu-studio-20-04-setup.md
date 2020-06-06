@@ -46,14 +46,15 @@ powerline-shell --generate-config > ~/.config/powerline-shell/config.json
 }
 ```
 # fonts
-参考URL https://github.com/miiton/Cica
+[Cica](https://github.com/miiton/Cica)
 
 https://github.com/miiton/Cica/releases/download/v5.0.1/Cica_v5.0.1_with_emoji.zip
+からzipファイルをダウンロード
 ```
 unzip ${ダウンロード先}/Cica_v5.0.1_with_emoji.zip -d ~/.fonts
 ```
 # Install tools
-- Brave webbrawser
+- [Brave(webbrowser)](https://brave.com/ja/)
 
 
 # 共有フォルダ
@@ -66,14 +67,10 @@ blkid
 mkdir ~/Work
 
 // 自動マウントの設定
-/etc/fstabで
-UUID="blkidで調べたUUID" /home/n18011/Work auto, .... 0 2
-
-を追記
-
+echo 'UUID="blkidで調べたUUID" /home/n18011/Work auto  auto,x-systemd.automount,rw,nofail,x-systemd.device-timeout=1,suid,dev,users,exec,async,errors=remount-ro  0 1' >> /etc/fstab
 ```
 
-# lsを変更
+# lsを[lsd](https://github.com/Peltoche/lsd)に変更
 ```
 sudo snap install lsd
 alias ls='lsd'
