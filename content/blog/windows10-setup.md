@@ -44,10 +44,12 @@ wslウインドウ右クリックプロパティからフォント、Cicaを選�
 
 ## apt install
 - cargo
+
 ## cargo install
 - lsd
 - bat
 - tokei
+
 ## lsをlsdに変更
 alias ls='lsd'
 alias l='ls -l'
@@ -55,6 +57,7 @@ alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
 funcsave ls l la lla lt
+
 ## PATH
 ~/.config/fish/config.fishに
 export PATH="$PATH:/home/n18011/.cargo/bin"
