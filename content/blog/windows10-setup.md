@@ -46,6 +46,8 @@ wslウインドウ右クリックプロパティからフォント、Cicaを選�
 - cargo
 ## cargo install
 - lsd
+- bat
+- tokei
 
 ## PATH
 export PATH="$PATH:/home/n18011/.cargo/bin"
