@@ -41,7 +41,11 @@ Cica
 https://github.com/miiton/Cica/releases/download/v5.0.1/Cica_v5.0.1_with_emoji.zip からzipファイルをダウンロード後zipファイルクリックCica-Regular.ttfクリック、インストール
 wslウインドウ右クリックプロパティからフォント、Cicaを選択OK
 
+
 ## apt install
 - cargo
 ## cargo install
 - lsd
+
+## PATH
+export PATH="$PATH:/home/n18011/.cargo/bin"
