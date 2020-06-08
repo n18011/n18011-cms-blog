@@ -56,4 +56,6 @@ alias lla='ls -la'
 alias lt='ls --tree'
 funcsave ls l la lla lt
 ## PATH
+~/.config/fish/config.fishに
 export PATH="$PATH:/home/n18011/.cargo/bin"
+を追記
