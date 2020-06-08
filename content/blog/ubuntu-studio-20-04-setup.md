@@ -101,6 +101,8 @@ cargo 1.44.0 (05d080faa 2020-05-06)
 ```cargo install ripgrep```
 - [cargo atcoder](https://github.com/tanakh/cargo-atcoder)
 ```cargo install cargo-atcoder```
+- cross
+```cargo install cross```
 
 ## lsを[lsd](https://github.com/Peltoche/lsd)に変更
 ```
