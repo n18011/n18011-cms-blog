@@ -9,5 +9,6 @@ CMS.init({
     backend: {
       name: 'git-gateway',
       accept_roles: ['admin']
+    }
   }
 })
