@@ -6,11 +6,17 @@ module.exports = {
     description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
     siteUrl: `https://n18011-cms-blog.netlify.com/`,
     social: {
-      twitter: `phoenix_0922`,
-    },
+      twitter: `phoenix_0922`
+    }
   },
   plugins: [
-    `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        modulePath: `${__dirname}/src/cms.js`, // default: undefined
+        enableIdentityWidget: true
+      }
+    },
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -21,51 +27,51 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
-        name: `blog`,
-      },
+        name: `blog`
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/assets`,
-        name: `assets`,
-      },
+        name: `assets`
+      }
     },
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        extensions: [".mdx", ".md"],
+        extensions: ['.mdx', '.md'],
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
-            },
+              maxWidth: 590
+            }
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
+              wrapperStyle: `margin-bottom: 1.0725rem`
+            }
           },
           {
-            resolve: `gatsby-remark-vscode`,
+            resolve: `gatsby-remark-vscode`
           },
           {
-            resolve: `gatsby-remark-copy-linked-files`,
+            resolve: `gatsby-remark-copy-linked-files`
           },
           {
-            resolve: `gatsby-remark-smartypants`,
-          },
-        ],
-      },
+            resolve: `gatsby-remark-smartypants`
+          }
+        ]
+      }
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // edit below
         // trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -77,14 +83,14 @@ module.exports = {
         theme_color: `#663399`,
         display: `standalone`,
         // edit below
-        icon: `content/assets/gatsby-icon.png`,
-      },
+        icon: `content/assets/gatsby-icon.png`
+      }
     },
     {
       resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
-  ],
+        pathToConfigModule: `src/utils/typography`
+      }
+    }
+  ]
 }
