@@ -7,7 +7,7 @@ import CMS from 'netlify-cms-app'
 CMS.init({
   config: {
     backend: {
-      name: 'git-gateway'
-    }
+      name: 'git-gateway',
+      accept_roles: ['admin']
   }
 })
